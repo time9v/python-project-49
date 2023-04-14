@@ -3,4 +3,4 @@
 
 
 ### Maintainability Badge:
-<a href="https://codeclimate.com/github/time9v/python-project-49/test_coverage"><img src="https://api.codeclimate.com/v1/badges/7faa86dd57a58302ab40/test_coverage" /></a>
+<a href="https://codeclimate.com/github/time9v/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/7faa86dd57a58302ab40/maintainability" /></a>
