@@ -24,7 +24,8 @@ def main():
         elif quest % 2 != 0 and b != 'no':
             print(f"'{b}' is wrong answer ;(. Correct answer was 'no'. Let's try again, {name}!")
             break
-    return print(f'Congratulations, {name}!')
+    if i == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
