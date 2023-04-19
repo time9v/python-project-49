@@ -13,7 +13,7 @@ def main():
         random_operator = random.choice(operations)
         first_num = random.randrange(1, 10)
         second_num = random.randrange(1, 10)
-        a = print(f'Question: {first_num} {random_operator} {second_num}')
+        quest = print(f'Question: {first_num} {random_operator} {second_num}')
         answer = input('Your answer: ')
         if random_operator == '+':
             result = first_num + second_num
