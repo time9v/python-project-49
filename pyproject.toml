@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "https://python-poetry.org/docs/"
+description = ""
 authors = ["time9v <lol.time9@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
