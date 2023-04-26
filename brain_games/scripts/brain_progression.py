@@ -21,7 +21,7 @@ def main():
             spisok_quests = [index if index != random_choice else secret for index in spisok_quests]
 
         new = " ".join(map(str, spisok_quests))
-        print(f'Qustion: {new}')
+        print(f'Question: {new}')
         answer = input('Your answer: ')
         if int(answer) == random_choice:
             print('Correct!')
