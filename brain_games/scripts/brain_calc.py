@@ -15,7 +15,7 @@ def main():
         first_num = random.randrange(1, 10)
         second_num = random.randrange(1, 10)
         print(f'Question: {first_num} {random_operator} {second_num}')
-        answer = input('Your answer: ')
+        ans = input('Your answer: ')
         if random_operator == '+':
             result = first_num + second_num
         elif random_operator == '-':
@@ -23,11 +23,11 @@ def main():
         else:
             result = first_num * second_num
 
-        if int(answer) == result:
+        if int(ans) == result:
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;( .Correct answer was '{result}'."
+            print(f"'{ans}' is wrong answer ;( .Correct answer was '{result}'."
                   f"\nLet's try again, {name}!")
             break
     if i == 3:

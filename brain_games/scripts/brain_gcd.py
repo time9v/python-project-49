@@ -14,12 +14,12 @@ def main():
         second_num = random.randrange(1, 100)
         print(f'Question: {first_num} {second_num}')
         result = math.gcd(first_num, second_num)
-        answer = input('Your answer: ')
-        if int(answer) == result:
+        ans = input('Your answer: ')
+        if int(ans) == result:
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'."
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{result}'."
                   f"\nLet's try again, {name}!'")
             break
     if i == 3:
