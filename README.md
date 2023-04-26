@@ -11,6 +11,7 @@ The project is a set of logical mini-games.
 3. bran-gcd - calculating the greatest common divisor
 4. brain-prime - prime number definition
 5. brain-progression - definition of a hidden element
+
 To install, you need to use "python3 -m pip install --user dist/*.whl".
 An example of launch and operation is provided at the link:
  https://asciinema.org/a/shhCrTjIxY9TNDL18Z0of10U7
