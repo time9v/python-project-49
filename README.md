@@ -5,3 +5,12 @@
 ### Maintainability Badge:
 <a href="https://codeclimate.com/github/time9v/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/7faa86dd57a58302ab40/maintainability" /></a>
 
+The project is a set of logical mini-games.
+1. brain-even - parity check
+2. brain-calc - simple examples
+3. bran-gcd - calculating the greatest common divisor
+4. brain-prime - prime number definition
+5. brain-progression - definition of a hidden element
+To install, you need to use "python3 -m pip install --user dist/*.whl".
+An example of launch and operation is provided at the link:
+ https://asciinema.org/a/shhCrTjIxY9TNDL18Z0of10U7
