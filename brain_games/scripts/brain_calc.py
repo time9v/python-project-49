@@ -3,6 +3,7 @@ import prompt
 
 
 def main():
+    print('Welcome to the Brain Games! ')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print('What is the result of the expression?')
@@ -13,7 +14,7 @@ def main():
         random_operator = random.choice(operations)
         first_num = random.randrange(1, 10)
         second_num = random.randrange(1, 10)
-        quest = print(f'Question: {first_num} {random_operator} {second_num}')
+        print(f'Question: {first_num} {random_operator} {second_num}')
         answer = input('Your answer: ')
         if random_operator == '+':
             result = first_num + second_num
@@ -26,7 +27,8 @@ def main():
             print('Correct!')
             i += 1
         else:
-            print(f"'{answer}' is wrong answer ;( .Correct answer was '{result}'. \nLet's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;( .Correct answer was '{result}'. "
+                  f"\nLet's try again, {name}!")
             break
     if i == 3:
         print(f'Congratulations, {name}!')
@@ -34,3 +36,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
