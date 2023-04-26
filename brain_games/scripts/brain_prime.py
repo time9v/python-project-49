@@ -1,7 +1,7 @@
 import random
 import prompt
 
-
+# flake8: noqa: C901
 def main():
     print('Welcome to the Brain Games! ')
     name = prompt.string('May I have your name? ')
@@ -11,7 +11,6 @@ def main():
     while n < 3:
         first_num = random.randrange(1, 100)
         print(f'Question: {first_num}')
-        k = 2
         answer = input('Your answer: ')
         k = 0
         for i in range(2, first_num // 2 + 1):
@@ -31,8 +30,6 @@ def main():
             print(f"'yes' is wrong answer ;( .Correct answer was 'no'."
                   f"\nLet's try again, {name}!")
             break
-        else:
-            print('no correct')
 
     if n == 3:
         print(f'Congratulations, {name}!')
