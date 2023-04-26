@@ -6,7 +6,7 @@ def main():
     print('Welcome to the Brain Games! ')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print('Answer "yes" if given number is prime. Otherwise answer "no"')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     n = 0
     while n < 3:
         first_num = random.randrange(1, 100)
@@ -21,14 +21,14 @@ def main():
             print("Correct!")
             n += 1
         elif k <= 0 and answer == 'no':
-            print(f"'no' is wrong answer ;( .Correct answer was 'yes'. "
+            print(f"'no' is wrong answer ;( .Correct answer was 'yes'."
                   f"\nLet's try again, {name}!")
             break
         elif k > 0 and answer == 'no':
             print("Correct!")
             n += 1
         elif k > 0 and answer == 'yes':
-            print(f"'yes' is wrong answer ;( .Correct answer was 'no'. "
+            print(f"'yes' is wrong answer ;( .Correct answer was 'no'."
                   f"\nLet's try again, {name}!")
             break
         else:
