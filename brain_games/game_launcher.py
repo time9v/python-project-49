@@ -15,7 +15,7 @@ def main_logic(question, correct_answer):
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.") # noqa: E501
         return False
 
 

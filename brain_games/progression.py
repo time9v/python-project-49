@@ -11,7 +11,7 @@ def get_game():
     correct_answer = random.choice(quests)
     if correct_answer in quests:
         secret = '..'
-        quests = [index if index != correct_answer else secret for index in quests]
+        quests = [index if index != correct_answer else secret for index in quests] # noqa: E501
 
     question = " ".join(map(str, quests))
     correct_answer = str(correct_answer)
