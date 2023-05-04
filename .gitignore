@@ -1,5 +1,5 @@
-.venv/
-dist/
-.idea/
-__pycache__/
-.pyproject.toml.swp/
+/.venv/
+/dist/
+/.idea/
+/__pycache__/
+/.pyproject.toml.swp/
