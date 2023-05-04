@@ -9,8 +9,3 @@ def get_game():
     question = f'{first_num} {second_num}'
     correct_answer = str(math.gcd(first_num, second_num))
     return question, correct_answer
-
-
-
-
-

@@ -19,5 +19,3 @@ def prime_logic(question):
     else:
         answer = 'no'
     return answer
-
-

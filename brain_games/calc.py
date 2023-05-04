@@ -14,8 +14,3 @@ def get_game():
 def calculate_expression(question):
     answer = str(eval(question))
     return answer
-
-
-
-
-

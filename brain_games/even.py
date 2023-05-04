@@ -14,5 +14,3 @@ def even_logic(question):
     else:
         answer = 'no'
     return answer
-
-

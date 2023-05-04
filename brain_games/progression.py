@@ -16,5 +16,3 @@ def get_game():
     question = " ".join(map(str, quests))
     correct_answer = str(correct_answer)
     return question, correct_answer
-
-
