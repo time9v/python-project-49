@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games import gcd
-from brain_games.game_launcher import victory_condition
+from brain_games.games import gcd
+from brain_games.game_launcher import main_logic
 
 
 def main():
-    victory_condition(gcd)
+    main_logic(gcd)
 
 
 if __name__ == '__main__':
