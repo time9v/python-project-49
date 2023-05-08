@@ -1,5 +1,5 @@
-.venv
+.idea/
+__pycache__/
 dist/
-.idea
-/*.swp/
-
+.venv/
+poetry.lock
