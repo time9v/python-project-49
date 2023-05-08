@@ -2,11 +2,11 @@
 
 
 from brain_games.games import progression
-from brain_games.game_launcher import main_logic
+from brain_games.game_launcher import start_game
 
 
 def main():
-    main_logic(progression)
+    start_game(progression)
 
 
 if __name__ == '__main__':

@@ -1,18 +1,23 @@
 import random
+
 GAME_RULE = 'What number is missing in the progression?'
 
 
-def get_game():
-    quest = random.randrange(1, 50)
-    quest2 = quest + 20
-    quests = []
-    for x in range(quest, quest2, 2):
-        quests.append(x)
-    correct_answer = random.choice(quests)
-    if correct_answer in quests:
-        secret = '..'
-        quests = [index if index != correct_answer else secret for index in quests]  # noqa: E501
+def generate_progression():
+    first_num = random.randrange(1, 50)
+    last_num = first_num + 20
+    progression = []
+    for x in range(first_num, last_num, 2):
+        progression.append(x)
+    return progression
 
-    question = " ".join(map(str, quests))
+
+def get_game():
+    progression = generate_progression()
+    correct_answer = random.choice(progression)
+    if correct_answer in progression:
+        secret = '..'
+        progression = [index if index != correct_answer else secret for index in progression]  # noqa: E501
+    question = " ".join(map(str, progression))
     correct_answer = str(correct_answer)
     return question, correct_answer
