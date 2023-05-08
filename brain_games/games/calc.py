@@ -1,5 +1,16 @@
 import random
+
 GAME_RULE = 'What is the result of the expression?'
+
+
+def calculate_expression(first_num, random_operator, second_num):
+    if random_operator == '+':
+        answer = first_num + second_num
+    elif random_operator == '-':
+        answer = first_num - second_num
+    else:
+        answer = first_num * second_num
+    return answer
 
 
 def get_game():
@@ -7,10 +18,5 @@ def get_game():
     first_num = random.randrange(1, 10)
     second_num = random.randrange(1, 10)
     question = f'{first_num} {random_operator} {second_num}'
-    correct_answer = calculate_expression(question)
+    correct_answer = calculate_expression(first_num, random_operator, second_num)
     return question, correct_answer
-
-
-def calculate_expression(question):
-    answer = str(eval(question))
-    return answer
