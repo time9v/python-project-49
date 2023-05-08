@@ -18,7 +18,5 @@ def get_game():
     first_num = random.randrange(1, 10)
     second_num = random.randrange(1, 10)
     question = f'{first_num} {random_operator} {second_num}'
-    correct_answer = calculate_expression(first_num, random_operator, second_num)
+    correct_answer = calculate_expression(first_num, random_operator, second_num) # noqa: E501
     return question, str(correct_answer)
-
-print(get_game())
