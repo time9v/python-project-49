@@ -2,7 +2,7 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-def main_logic(game):
+def start_game(game):
     name = welcome_user()
     print(game.GAME_RULE)
     i = 0
